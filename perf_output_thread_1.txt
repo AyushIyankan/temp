@@ -1,0 +1,20 @@
+# started on Sat Oct 26 17:17:43 2024
+
+
+ Performance counter stats for process id '214494':
+
+     <not counted> msec task-clock                                                            
+     <not counted>      context-switches                                                      
+     <not counted>      cpu-migrations                                                        
+     <not counted>      page-faults                                                           
+     <not counted>      cycles                                                                
+     <not counted>      instructions                                                          
+     <not counted>      branches                                                              
+     <not counted>      branch-misses                                                         
+
+       0.163830847 seconds time elapsed
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
